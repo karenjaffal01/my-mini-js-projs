@@ -7,6 +7,7 @@
     <title>Mini projects collection</title>
 </head>
 <body>
+    <!-- clock -->
     <div class="hero">
         <div class = "container1">
             <div class="clock">
@@ -18,6 +19,7 @@
             </div>
         </div>
     </div>
+    <!-- stopwatch -->
     <div class="hero">
         <div class = "container2">
             <span id="day">Day 1</span>
@@ -35,6 +37,35 @@
             </div>
         </div>
     </div>
+    <!-- age calculator -->
+    <div class="hero">
+    <div class="container3">
+        <label for="age">Enter your birthdate: </label>
+        <input type="text" id="age" name="age" placeholder="DD/MM/YY">
+        <button type="submit" class="btn">Calculate Age</button>
+        <div class="answer">
+            <p id="answers"></p>
+        </div>
+    </div>
+</div>
+    <!-- random password generator -->
+    <div class="hero">
+        <div class="container3">
+            <label for="age">Generate Random Password</label>
+            <h6>Choose password length:</h6>
+            <select id="dropdown" name="options">
+            <option value="16">16</option>
+            <option value="12">12</option>
+            <option value="8">8</option>
+            </select>
+            <div class="display">
+              <input type="text" id="password" name="age">
+              <img id="copy" src="../images/copy.png">
+            </div>
+            <button type="submit" class="botn">Generate</button>
+        </div>
+    </div>
+    
     <script src="clock.js"></script>
 </body>
 </html>

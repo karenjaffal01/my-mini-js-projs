@@ -12,13 +12,14 @@
 .hero{
   background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
   height:100vh;
-  background-size: 150% 150%; /* Make the background larger to allow for smooth animation */
+  background-size: 150% 150%; 
   font-size: 4rem;
   display: flex;
   justify-content: center;
   align-items:center;
   animation: moveGradient 15s ease infinite;
 }
+
 .container1{
     background-color: hsla(180, 76%, 67%, 0.499);
     width:50%;
@@ -40,6 +41,41 @@
     margin-top:25px;
     padding-top:25px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.container3{
+    background-color: hsla(180, 76%, 67%, 0.499);
+    width:50%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin:25px;
+    padding:25px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:25px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width:30%;
+    background-color:#fac094;
+    border:none;
+    height:25px;
+    cursor:pointer;
+}
+.answer{
+    background-color: hsla(335, 89%, 83%, 0.648);
+    height:auto;
+    font-size: 1.2rem;
+    margin-top:15px;
+    border-radius:10px;
+    padding:5px;
+    display:none; /*make the dic that will contain the age invisible unless called by js*/
 }
 .clock span{
    margin:5px;
@@ -87,4 +123,25 @@
 .btns button:hover{
     background-color: #facdab;
     transform: scale(1.05); /* Slightly increase the size */
+}
+
+.display{
+    background-color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+    margin-top:10px;
+    height:52px;
+}
+.display img{
+    width:30px;
+    height:auto;
+    cursor: pointer;
+}
+
+.display input{
+    outline:0;
+    border:0;
+    font-size: 15px;
 }

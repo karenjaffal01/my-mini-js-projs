@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Between Containers</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <!-- drag and drop -->
+    <div id="left" class="container">
+        <div class="list" draggable="true">Item 1</div>
+        <div class="list" draggable="true">Item 2</div>
+        <div class="list" draggable="true">Item 3</div>
+    </div>
+
+    <div id="right" class="container">
+        <div class="list" draggable="true">Item A</div>
+        <div class="list" draggable="true">Item B</div>
+        <div class="list" draggable="true">Item C</div>
+    </div>
+    <!-- image slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="../images/depositphotos_220344466-stock-photo-beautiful-sunrise-winter-mountains-transylvania.jpg"></div>
+            <div class="slide"><img src='../images/pexels-thatguycraig000-1563356.jpg'></div>
+            <div class="slide mountain"><img src='../images/photo-masthead-375-BoK_p8LG.webp'></div>
+            <div class="slide"><img src='../images/premium_photo-1697762690198-ccb999d0b218.jpeg'></div>
+        </div>
+        <button id="prev">&#10094</button>
+        <button id="next">&#10095</button>
+    </div>
+   <!-- Spin Wheel -->
+<div class="spinwheel">
+    <div class="container2">
+        <div class="spinBtn">Spin</div>
+        <div class="wheel">
+            <div class="number"><span style='--i:1; --clr:yellow;'>10</span></div>
+            <div class="number"><span style='--i:2; --clr:red;'>20</span></div>
+            <div class="number"><span style='--i:3; --clr:blue;'>30</span></div>
+            <div class="number"><span style='--i:4; --clr:pink;'>40</span></div>
+            <div class="number"><span style='--i:5; --clr:green;'>50</span></div>
+            <div class="number"><span style='--i:6; --clr:purple;'>60</span></div>
+            <div class="number"><span style='--i:7; --clr:aqua;'>70</span></div>
+            <div class="number"><span style='--i:8; --clr:beige;'>80</span></div>
+        </div>
+    </div>
+</div>
+    <script src="image.js"></script>
+</body>
+</html>
