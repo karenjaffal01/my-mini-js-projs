@@ -1,0 +1,74 @@
+body{
+   background-color: rgb(18, 1, 33);
+   color:white;
+}
+.cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+   
+}
+.cell{
+    border: 5px dashed;
+    border-image: linear-gradient(45deg, #f06, #4a90e2) 1;
+    width:80px;
+    height:80px;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor : pointer;
+    user-select: none;
+}
+.gameContainer{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    background: linear-gradient(45deg, #f06, #4a90e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(4),
+.cell:nth-child(5),
+.cell:nth-child(7),
+.cell:nth-child(8) {
+    border-right: none;
+}
+
+/* Remove bottom border from cells in the first and second row */
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3),
+.cell:nth-child(4),
+.cell:nth-child(5),
+.cell:nth-child(6) {
+    border-bottom: none;
+}
+
+#restartbtn {
+    background: linear-gradient(45deg, #f06, #4a90e2);
+    border: none;
+    color:#b9d5f4;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+#restartbtn:hover {
+    background: linear-gradient(45deg, #4a90e2, #f06); /* Reverse gradient on hover */
+}
+
+.win {
+    background-color: #5dc1eb; 
+    color: white; 
+}
